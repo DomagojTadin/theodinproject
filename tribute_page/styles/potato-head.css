@@ -32,6 +32,6 @@ h3 {
 .photo-grid {
   float: none;
   display: inline-grid;
-  width: 100%;
-  grid-template-columns: repeat(5, minmax(60px, 1fr));
+  width: 60%;
+  grid-template-columns: repeat(5, 1fr);
 }
