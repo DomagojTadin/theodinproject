@@ -1,0 +1,19 @@
+#survey_page {
+  background-image: url(https://images.theconversation.com/files/223729/original/file-20180619-126566-1jxjod2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+#centered_container {
+  margin: 5% 30% 10% 30%;
+  background-color: darkturquoise;
+  border-radius: 50px;
+}
+
+#survey_container {
+  text-align: center;
+  background-color: dodgerblue;
+  margin: 0% 10% 10% 10%;
+}
