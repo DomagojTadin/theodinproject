@@ -1,4 +1,4 @@
-#survey_page {
+#survey-page {
   background-image: url(https://images.theconversation.com/files/223729/original/file-20180619-126566-1jxjod2.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -12,7 +12,7 @@
   border-radius: 50px;
 }
 
-#survey_container {
+#survey-form {
   text-align: center;
   background-color: dodgerblue;
   margin: 0% 10% 10% 10%;

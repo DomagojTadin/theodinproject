@@ -4,18 +4,90 @@
     <title>Take a survey!</title>
     <link href="/styles/survey_page.css" rel="stylesheet" />
   </head>
-  <body id="survey_page">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <body id="survey-page">
     <div id="centered_container">
-      <div id="title"><h1>TITLE</h1></div>
-      <div id="subtext"><h2>SUBTEXT</h2></div>
-      <div id="survey_container">
-        <div id="survey_question_1">first question</div>
-        <div id="survey_question_2">second question</div>
-        <div id="survey_question_3">third question</div>
-        <div id="survey_question_4">fourth question</div>
-        <div id="survey_question_5">fifth question</div>
-        <div id="submit_button_container"><button>Submit button</button></div>
-      </div>
+      <div><h1 id="title">TITLE</h1></div>
+      <div><p id="description">SUBTEXT</p></div>
+      <form id="survey-form">
+        <label id="name-label">
+          Name: <input type="text" id="name" placeholder="Jane Doe" required />
+        </label>
+        <label id="email-label">
+          Email:
+          <input type="email" id="email" placeholder="you@email.com" required />
+        </label>
+        <label id="number-label">
+          Number:
+          <input
+            type="number"
+            id="number"
+            placeholder="99"
+            min="1"
+            max="99"
+            style="width: 9.5em"
+          />
+        </label>
+        <div>
+          Dropdown:
+          <select name="dropdown" id="dropdown">
+            <option value="1" selected="selected">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+        </div>
+        <div>
+          Choose One:
+          <div>
+            <label
+              >Option 1: <input type="radio" name="radio" value="1"
+            /></label>
+            <label
+              >Option 2: <input type="radio" name="radio" value="2"
+            /></label>
+            <label
+              >Option 3: <input type="radio" name="radio" value="3"
+            /></label>
+          </div>
+        </div>
+        <div>
+          Choose Another One:
+          <div>
+            <label for="checkbox1"
+              >Option 1:
+              <input
+                type="checkbox"
+                id="checkbox1"
+                name="checkbox-name"
+                value="1"
+            /></label>
+            <label for="checkbox2"
+              >Option 2:
+              <input
+                type="checkbox"
+                id="checkbox2"
+                name="checkbox-name"
+                value="2"
+            /></label>
+            <label for="checkbox3"
+              >Option 3:
+              <input
+                type="checkbox"
+                id="checkbox3"
+                name="checkbox-name"
+                value="3"
+            /></label>
+          </div>
+        </div>
+        <div>
+          Additional Comments
+          <div>
+            <textarea></textarea>
+          </div>
+        </div>
+        <div>
+          <button type="submit" id="submit">Submit!</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
