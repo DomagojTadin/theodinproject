@@ -8,12 +8,8 @@ function computerPlay() {
     case turnval >= 33 && turnval < 66:
       turn = "scissors";
       break;
-    case turnval >= 66 && turnval < 99:
-      turn = "paper";
-      break;
     default:
-      turn = "lizard";
-      break;
+      turn = "paper";
   }
   return turn;
 }
