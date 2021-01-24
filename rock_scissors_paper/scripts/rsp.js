@@ -2,10 +2,10 @@ function computerTurn() {
 	let turnResult;
 	let randomNumber = Math.floor(Math.random() * 100);
 	switch (true) {
-		case randomNumber >= 0 && turnResult < 33:
+		case randomNumber >= 0 && randomNumber < 33:
 			turnResult = 'rock';
 			break;
-		case randomNumber >= 33 && turnResult < 66:
+		case randomNumber >= 33 && randomNumber < 66:
 			turnResult = 'scissors';
 			break;
 		default:
