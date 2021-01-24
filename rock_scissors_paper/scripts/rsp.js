@@ -1,6 +1,5 @@
 function computerTurn() {
-	let turnResult;
-	let randomNumber = Math.floor(Math.random() * 100);
+	let turnResult, randomNumber = Math.floor(Math.random() * 100);
 	switch (true) {
 		case randomNumber >= 0 && randomNumber < 33:
 			turnResult = 'rock';
@@ -15,8 +14,7 @@ function computerTurn() {
 }
 
 function playRound(playerInput, computerInput) {
-	let outcome;
-	let result;
+	let outcome, result;
 	switch (true) {
 		case playerInput.toLowerCase() == computerInput.toLowerCase():
 			outcome = `Tie game! Your ${playerInput} equals their ${computerInput}`;
@@ -49,7 +47,4 @@ function game() {
 		console.log(roundresult.outcome);
 		result.push(roundresult.result);
 	}
-	result.forEach((element) => {
-		console.log(element + '\n');
-	});
 }
